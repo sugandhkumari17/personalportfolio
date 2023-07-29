@@ -26,17 +26,20 @@
             border-radius: 25px;
             color: #15bdb4;
         }
-        
+        .footer{
+            height: 200px;
+            width: 100%;
+        }
     </style>
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-        <div class="mb-2 mb-lg-1" style=" background-color:#15bdb4;width: 100%;height: 75px;position: fixed;display: flex; align-items: center;justify-content: space-between;z-index: 0;" >
+        <div class="mb-2 mb-lg-1" style=" background-color:#15bdb4;height: 75px;position: fixed;display:flex; align-items: center;justify-content: space-between;width: 100%;" >
             <h3 class="float-start text-white px-5 " >SUGA<span style="color:#00e600;">NDH_KU</span>MARI</h3> 
-            <nav class="navbar navbar-expand-lg  mx-3 px-3 float-end " id="navbarSupportedContent" >
+            <nav class="navbar navbar-expand-lg  mx-3 px-3 float-end " id="navbarSupportedContent" data-action="space-around">
                 <div class="container-fluid ">   
-                    <ul class="navbar-nav mR-auto ">
+                    <ul class="nav nav-fill mR-auto ">
                         <li class="nav-item headerli px-4 ">
                             <a class="nav-link active  text-white " href="#Home">Home</a>
                         </li>
@@ -50,7 +53,7 @@
                             <a class="nav-link text-white " href="#Contant">Contant</a>
                         </li>
                         <li class="nav-item headerli px-4">
-                            <a class="nav-link text-white " href="#">SKILL</a>
+                            <a class="nav-link text-white " href="#SKILL">SKILL</a>
                         </li>
                         <li class="nav-item headerli px-4">
                             <a class="nav-link text-light " href="#Project">Project</a>
@@ -61,7 +64,7 @@
         <div class="header">
         <div style="position: absolute; padding-top: 200px; padding-left: 110px; z-index: 3;" id="Home">
             <p style="font-weight: bold;">Hello friends I`am </p>
-            <h2>Sugandh kumari Chhabria</h2>
+            <h2 class="mb-2">Sugandh kumari Chhabria</h2>
             <p style="font-weight: bold;">I am student of BS Computer Science at<br>Sukkur IBA University,I am currenty working <br>on frontend developer.</p>
             <div class="d-flex align-items-center ">
               <a href="#" class="mb-3"><i class="fa-brands fa-facebook-f" style="background-color:#15bdb4; color:white ; font-size: 20px;padding: 10px;border-radius:40px;margin-left:0;"></i></a>  
@@ -77,7 +80,7 @@
     </div>
     <div class="mainbody">
         <div>
-            <div class="About" >
+            <div class="About position-relative" >
                 <h1 id="About">ABOUT ME</h1>
                 <p >Hello Friends , My name is sugandh kumari and I am a Computer Science Student at Sukkur IBA University.
                     I enjoy problem-solving and coding. I have worked on technologies like MySQL, HTML5, CSS, Java, C++, 
@@ -108,24 +111,124 @@
         <div>
             <h1 class="text-center mb-3" id="Project">Project</h1>
             <div class="d-flex align-items-center justify-content-between m-5 z-1">
-                <div style="border: 1px solid red; width: 300px; height: 300px;" class="card mb-3">
-                   
+                <div style="border: 1px solid red; width: 300px; height: 350px;" class="card mb-3 text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qfIAuqnRt5O98emK3KkKSjkXeWuVBLU2ew&usqp=CAU" >
                     <div class="card-body">
-                       
-                    </div>
+                       <h4>Website for Profeesional Work</h4>
+                       <h6>A Simple and Profeesional websites for web developer </h6>
+                    </div> 
                 </div>
-                <div style="border: 1px solid red; width:300px; height: 300px;" class="card mb-3">
-                    
+                <div style="border: 1px solid red; width:300px; height: 350px; padding-top: 90px; font-size: 30px;" class="card mb-3 text-center">
+                    +
                 </div>
-                <div style="border: 1px solid red;width:300px; height: 300px;" class="card mb-3">
-                    
+                <div style="border: 1px solid red;width:300px; height: 350px; padding-top: 90px; font-size: 30px;" class="card mb-3 text-center">
+                    +
                 </div>
-                <div style="border: 1px solid red;width:300px; height: 300px;" class="card mb-3 ">
-                    
+                <div style="border: 1px solid red;width:300px; height: 350px; padding-top: 90px; font-size: 30px;" class="card mb-3 text-center">
+                    +
                 </div>
             </div>
         </div>
-        <div>
+       
+        <div id="EDUCATION AND CETIFICATE" style="width:100%; height: 500px; background-color: #15bdb4;" class="mb-3" >
+            <section class="float-start mx-5 mb-2 " style=" width:500px; height: 300px;margin-top: 20px;">
+            <img src="https://img.freepik.com/free-photo/education-day-arrangement-with-graduation-cap_23-2148721281.jpg?size=626&ext=jpg&ga=GA1.1.298659369.1681316794&semt=ais" width="500px" height="300px" >   
+            </section>
+            <section class="float-end text-white text-center mb-2" style=" width: 700px; height: 200px ;margin-top: 20px; margin-right: 30px; ">
+                <h1 >EDUCATION</h1>
+                <h3 > Basic Qualification and Certifications</h3>
+                <h6 >I regularly update my self from the new technologies. Below are some of my major certifications.</h6>
+            </section>
+        </div>
+            <div>
+                <h1 class="text-center">Degrees Received</h1>
+                <img src="https://www.iba-suk.edu.pk/Content/assets/img/logo-white.png" class="float-start " style="background-color: darkblue; margin-left: 100px; margin-top: 40px; padding: 50px; border-radius: 48%;">
+                <div style=" width:600px; height: 350px;margin-left: 600px;" class="card mb-3" >
+                    <div  class=" text-bg-danger">
+                        <div class="card-title d-flex justify-content-around align-items-center">
+                        <h4 class="p-0 m-0"> Sukkur IBA University</h4>
+                        <p><strong>28 july 2023-28 july 2025 </strong></p>
+                        </div> 
+                        <p class="px-5"><strong>Bachelor in Computer Science</strong></p>
+                    </div> 
+                    <div class="card-body text-danger">
+                     <p>I have done my bachelors in Computer Science.</p>
+                     <p>I have studied core subjects like Data Structures, DBMS, etc..</p>
+                     <p>I have also completed various courses for frontend , Web development etc.</p>
+                     <p>I have implemented several projects based on what I've leart under my Computer Science course.</p>
+                     <button class="btn btn-danger px-5 py-2 float-end" type="submit">Visit websites</button>
+                    </div>
+                </div>
+                <h1 class="text-center">Certificate</h1>
+                <div class="px-5 mx-5 d-flex justify-content-evenly">
+                    <div style="border: 1px solid red; width: 301px; height: 300px;" class="card mb-3 text-center">
+                        <img src="https://shahportfolio.netlify.app/static/media/reactjs.8a48bf9b.png" style="width: 298px;height: 200px; background-color: #15bdb4;border-radius: 10px">
+                        <div class="card-body">
+                           <h4>Relational database cetificate</h4>
+                           <h6>Meta</h6>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid red; width: 301px; height: 300px;" class="card mb-3 text-center">
+                        <img src="https://th.bing.com/th?id=OIP.QQUTcBAmVvxoiZ0CRJy5rwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" style="width: 300px;height: 200px;border-radius: 10px;">
+                        <div class="card-body">
+                           <h4>HTML</h4>
+                           <h6>Meta</h6>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid red; width: 301px; height: 300px;" class="card mb-3 text-center">
+                        <img src="https://th.bing.com/th?id=OIP.yUIb5S_kj98Eg5tT-Onx1AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" style="width: 300px;height: 200px;border-radius: 10px;">
+                        <div class="card-body">
+                           <h4>CSS</h4>
+                           <h6>Meta</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5 mx-5 d-flex justify-content-evenly">
+                    <div style="border: 1px solid red; width: 301px; height: 300px;" class="card mb-3 text-center">
+                        <img src="https://th.bing.com/th?id=OIP.0BLjxxiPCa4DSQzJtKMVSwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" style="width: 300px;height: 200px;border-radius: 10px;">
+                        <div class="card-body">
+                           <h4>Bootstrap</h4>
+                           <h6>Meta</h6>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid red; width: 301px; height: 300px;" class="card mb-3 text-center">
+                       <div style="width: 300px;height: 200px;border-radius: 10px;background-color: goldenrod;">
+                        <img src="https://shahportfolio.netlify.app/static/media/js.15a4866e.png" style="width: 100px;height: 100px; margin-top:50px" >
+                       </div> 
+                        <div class="card-body">
+                           <h4>JS</h4>
+                           <h6>Meta</h6>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid red; width: 301px; height: 300px;" class="card mb-3 text-center">
+                        <img src="https://shahportfolio.netlify.app/static/media/mysql.9f37f28f.png" style="width: 300px;height: 200px;border-radius: 10px;">
+                        <div class="card-body">
+                           <h4>MySQL</h4>
+                           <h6>DataCamp</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Skill" style="background-color: #15bdb4; height: 350px;">
+                <h1 style="color: WHITE;" class="text-center" ><span style="color: #00e600;">MY</span> SKILL</h1>
+                <h6 class="text-center text-white">HTML</h6>
+                <div class="progress ">
+                    <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%;" aria-valuenow="10"  aria-valuemax="100">90%</div>
+                </div><br>
+                <h6 class="text-center text-white">CSS</h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success " role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemax="100">85%</div>
+                </div><br>
+                <h6 class="text-center text-white">BOOTSTRAP</h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info " role="progressbar" style="width: 78%" aria-valuenow="50" aria-valuemax="100">78%</div>
+                </div><br>
+                <h6 class="text-center text-white">JAVA SCRIPT</h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning " role="progressbar" style="width: 40%" aria-valuenow="75%" aria-valuemax="100">40%</div>
+                </div>
+           </div>
+           <div>
             <h1 class="text-center" id="Contant">Contant Us</h1>
             <form >
                 <div class="mb-3 d-flex mx-5 " >
@@ -139,108 +242,35 @@
                 <div class="mb-3 mx-5">
                     <textarea class="form-control" placeholder="Enter the message" rows="3"></textarea>
                 </div>
-                <div style="margin-left: 480px; mb-3">
+                <div style="margin-left: 590px; mb-3">
                     <button class="btn btn-primary px-5 py-2" type="submit">Submit</button>
                 </div>
             </form>
             <br><br>
         </div>
-            <div id="EDUCATION AND CETIFICATE" style="width:100%; height: 500px; background-color: #15bdb4;" class="mb-3" >
-                <section class="float-start mx-5 mb-2 " style=" width:500px; height: 300px;margin-top: 20px;">
-                <img src="https://img.freepik.com/free-photo/education-day-arrangement-with-graduation-cap_23-2148721281.jpg?size=626&ext=jpg&ga=GA1.1.298659369.1681316794&semt=ais" width="500px" height="300px" >   
-                </section>
-                <section class="float-end text-white text-center mb-2" style=" width: 700px; height: 200px ;margin-top: 20px; margin-right: 30px; ">
-                    <h1 >EDUCATION</h1>
-                    <h3 > Basic Qualification and Certifications</h3>
-                    <h6 >I regularly update my self from the new technologies. Below are some of my major certifications.</h6>
-                </section>
-            </div>
-            <div>
-                <h1 class="text-center">Degrees Received</h1>
-                <img src="https://www.iba-suk.edu.pk/Content/assets/img/logo-white.png" class="float-start image-rounded " style="background-color: darkblue; margin-left: 100px; margin-top: 40px; padding: 50px;">
-                <div style=" width:600px; height: 350px;margin-left: 600px;" class="card mb-3" >
-                    <div  class=" text-bg-danger">
-                        <div class="card-title d-flex justify-content-around align-items-center">
-                        <h4 class="p-0 m-0"> Sukkur IBA University</h4>
-                        <p><strong>28 july 2023-28 july 2025 </strong></p>
-                        </div> 
-                        <p class="px-5"><strong>Bachelor in Computer Science</strong></p>
-                    </div> 
-                    <div class="card-body text-danger">
-                     <p>I have done my bachelors in Computer Science.</p>
-                     <p>I have studied core subjects like Data Structures, DBMS, etc..</p>
-                     <p>I have also completed various courses for frontend , Web development etc.</p>
-                     <p> I have implemented several projects based on what I've leart under my Computer Science course.</p>
-                     <button class="btn btn-danger px-5 py-2 float-end" type="submit">Visit websites</button>
-                    </div>
-                </div>
-                <h1 class="text-center">Certificate</h1>
-                <div class="px-5 mx-5 d-flex justify-content-evenly">
-                    <div style="border: 1px solid red; width: 300px; height: 300px;" class="card mb-3 text-center">
-                        <a href="D:\bscs-llll record\data base\sugandhkumari (023-21-0142) dbms certificate.pdf" class="card-img-top"><img src="https://shahportfolio.netlify.app/static/media/reactjs.8a48bf9b.png" style="width: 300px;height: 150px; background-color: #15bdb4;"></a>
-                        <div class="card-body">
-                           <h4>Relational database cetificate</h4>
-                           <h6>Meta</h6>
-                        </div>
-                    </div>
-                    <div >
-                        <div style="border: 1px solid red; width: 300px; height: 300px;" class="card mb-3">
-                       
-                            <div class="card-body">
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <div style="border: 1px solid red; width: 300px; height: 300px;" class="card mb-3">
-                       
-                            <div class="card-body">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="px-5 mx-5 d-flex justify-content-evenly">
-                    <div style="border: 1px solid red; width: 300px; height: 300px;" class="card mb-3">
-                   
-                        <div class="card-body">
-                           
-                        </div>
-                    </div>
-                    <div >
-                        <div style="border: 1px solid red; width: 300px; height: 300px;" class="card mb-3">
-                       
-                            <div class="card-body">
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <div style="border: 1px solid red; width: 300px; height: 300px;" class="card mb-3">
-                       
-                            <div class="card-body">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="Skill" style="background-color: #15bdb4; height: 300px;">
-                <h1 style="color: WHITE;" class="text-center" ><span style="color: #00e600;">MY</span> SKILL</h1>
-                <div class="progress ">
-                    <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%;" aria-valuenow="10"  aria-valuemax="100">HTML</div>
-                </div><br>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success " role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemax="100">CSS</div>
-                </div><br>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info " role="progressbar" style="width: 78%" aria-valuenow="50" aria-valuemax="100">BOOTSTRAP</div>
-                </div><br>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-warning " role="progressbar" style="width: 40%" aria-valuenow="75%" aria-valuemax="100">JAVA SCRIPT</div>
-                </div>
-           </div>
-    <div class="footer">
+    <div class="footer d-flex " style="background-color:#15bdb4;padding-left:200px ;">
+        <div  >
+            <h2 class="text-white px-lg-5">Important Link </h2>
+            <nav class="" >
+                <ul style="list-style-type: none;" class="px-lg-5 " >
+                    <li ><a href="#Home" class="text-decoration-none text-white" >Home</a></li>
+                    <li><a href="#About" class="text-decoration-none text-white">About Us</a></li>
+                    <li><a href="#Education and Certificate" class="text-decoration-none text-white">Education and Certificate</a></li>
+                    <li><a href="#Contact" class="text-decoration-none text-white">Contact US</a></li>
+                    <li><a href="#Project" class="text-decoration-none text-white">Project</a></li>
+                    <li><a href="#SKILL" class="text-decoration-none text-white">Skill</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+        <div class=" text-white px-lg-5">
+            <h2 >Follow Us</h2>
+            <li style="list-style-type: none;" >
+            <i class="fa-brands fa-facebook" style="background: #3B5998; color: white;padding: 10px;border-radius: 30px;"></i>
+            <i class="fa-brands fa-twitter" style="background: #55ACEE; color: white;padding: 10px;border-radius: 30px;"></i>
+            <i href class="fa-brands fa-youtube" style="background:#bb0000; color: white;padding: 10px;border-radius: 30px;"></i>
+            <i class="fa-brands fa-instagram" style="background:#e6005c; color: white;padding: 12px;border-radius: 25px;"></i>
+           </li>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
