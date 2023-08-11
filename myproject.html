@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        ul li:hover a{
-           
-            background-color : #15bdb4 ;
-            border-radius: 25px;
+        .DivDegree:hover{
+          box-shadow: 5px 5px 5px #e6005c;
         }
-        .icon i:hover{
-            transform: rotate(90deg);
-            background-color: #00e600;
+        .ibalogo{
+          box-shadow: 5px 5px 5px #000066;
+        }
+        .Educationimg:hover{
+          box-shadow: 8px 8px 8px #15bdb4;
+        }
+        .Certificatecard:hover{
+          box-shadow: 5px 5px 5px #000066;
+        }
+        ul li:hover a{
+          background-color : #15bdb4 ;
+          border-radius: 25px;
         }
         .card1:hover {
             box-shadow: 5px 5px 5px #000066;
         }
-        .card2:hover {
-            box-shadow: 5px 5px 5px lightblue;
+        .carousel-caption{
+          top:220px;
         }
-        .card3:hover {
-            box-shadow: 5px 5px 5px orange;
-        }
-        .card4:hover {
-            box-shadow: 5px 5px 5px yellow;
-        }
-      .carousel-caption{
-        top:220px;
-      }
-      .carousel-caption h1{
+        .carousel-caption h1{
           text-transform: uppercase;
           letter-spacing: 2px;
-      }
+        }
+        .contactbutton:hover{
+          box-shadow: 5px 5px 5px #000066;
+        }
+        .skillimg:hover{
+          box-shadow: 5px 5px 5px #00e600;
+        }
+        body{
+          overflow-x: hidden;
+        }
+        .footerlink:hover i{
+          translate: rotate(90deg);
+          background-color: white;
+          color:#00e600
+        }
     </style>
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body class="overflow-x-hidden">       
-  <nav class="navbar navbar-expand-lg position-fixed w-100 z-1" style="background-color:#000033 ;">
+<body  >       
+  <nav class="navbar navbar-expand-lg fixed-top w-100 z-1 " style="background-color:#000033 ;">
     <div class="container-fluid">
       <h3 class="navbar-brand text-white">SUGA<span style="color: #00e600;">NDH_KU</span>MARI</h3>
       <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menubar">
         <ul class="navbar-nav ms-auto mb-2 mx-5 mb-lg-0">
@@ -53,10 +66,10 @@
             <a class="nav-link text-white " href="#EDUCATION AND CETIFICATE">Education and Certificate</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link text-white " href="#Project">Project</a>
+            <a class="nav-link text-white " href="#Project">Projects</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link text-white" href="#SKILL">Skill</a>
+            <a class="nav-link text-white" href="#SKILL">Skills</a>
           </li>
           <li class="nav-item px-3">
             <a class="nav-link text-white" href="#About">About</a>
@@ -72,29 +85,22 @@
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active " id="Home" >
-        <img src="https://wallpapers.com/images/featured/picture-en3dnh2zi84sgt3t.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block fs-6 fw-bolder">
-            <p data-aos="fade-right">Hello friends, I am sugandh kumari,</p>
-          <h1 class="text-white" data-aos="fade-left" data-aos-duration="1000">I AM <span class="text-warning" >WEB DEVELOPER</span></h1>
-          <p data-aos="fade-right"></p>
+        <img src="WhatsApp Image 2023-08-11 at 12.36.53.jpg" class=" w-100 " alt="...">
+        <div class="carousel-caption  fw-bolder ">
+            <p class="animated bounceInRight fs-6" style="animation-delay: 1s;">Hello friends, I am sugandh kumari,</p>
+          <h1 class=" animated bounceInLeft" style="animation-delay: 1s; color:orange;">I`M WEB DEVELOPER</h1>
+          <p class="animated bounceInRight" style="animation-delay: 1s;" >I am study at IBA Sukkur university.Currently, i am working on frontend Developer.As a skilled web developer, I possess a comprehensive understanding of the intricacies of web design and development. With a proficiency in programming languages such as HTML, CSS,Bootstrap, JavaScript. </p>
+          <p class="animated bounceInLeft"style="animation-delay: 1s;"><a href="resume.pdf" class="px-5 py-2" style="text-decoration:none ; background-color:#55ACEE ; border: 1px solid black; color: white;">My Resume</a></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://thumbs.dreamstime.com/b/silhouette-girl-photographer-sitting-rocks-high-shooti-shooting-sunset-89590030.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="text-white " data>I AM <span class="text-warning" >WEB DEVELOPER</span></h1>
-          <p>JIOIFJ</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-         <h1 class="text-white">I AM WEB <span class="text-warning" >DEVELOPER</span></h1>
-          <p>JIOIFJ</p>
+        <img src="freelancer.jpg" class="w-100" alt="...">
+        <div class="carousel-caption ">
+          <h1 class=" animated bounceInRight " style="animation-delay: 1s; color:orange;">I AM FreeLancer</h1>
+          <p class="animated bounceInLeft"style="animation-delay: 1s; color:white;"> I have gained a deep understanding of how to apply my skills to address specific challenges and drive success. As a dedicated freelancer, I am committed to not only meeting but exceeding expectations, consistently demonstrating my passion and proficiency in BS Computer Science</p>
         </div>
       </div>
     </div>
@@ -111,15 +117,15 @@
     <br><br>
     <div class="row">
      <div class="col ">
-       <h1 id="About" class="text-center" style="color:#000066;text-decoration: underline;">ABOUT ME</h1>
-         <p class="text-center font-family" ><strong>Hello Friends , My name is sugandh kumari and I am a Computer Science Student at Sukkur IBA University.<br>
+       <h1 id="About" class="text-center" style="color:#15bdb4;">About ME</h1>
+         <p class="text-center font-family" style="color:gray"><strong>Hello Friends , My name is sugandh kumari and I am a Computer Science Student at Sukkur IBA University.<br>
            I have worked on technologies like MySQL, HTML5, CSS, Java, C++, bootstrap, relational DBMS, JavaScript, React, and Node.js.</strong>
          </p>
      </div>
      </div>
-     <div class="row">
-       <div class="col py-3">
-         <h1 class="px-5" style="color: #15bdb4;text-decoration: underline;">personal Info</h1><br><br>
+     <div class="row ">
+       <div class="col py-3 text-center ">
+         <h1 class="px-2" style="color: #15bdb4;">Personal Info</h1><br><br>
          <div class="px-5 ">
            <p><strong style="color: #00e600;">NAME: </strong> Sugandh Kumari</p>
            <p><strong style="color: #00e600;">Address: </strong> Ghotki, Pakistan</p>
@@ -130,23 +136,23 @@
            <p><strong style="color: #00e600;">Open to Work: </strong> Available</p>
          </div> 
        </div>
-       <div class="col text-center py-3">
-         <div data-aos="flip-up" >
-           <img class="w-50 rounded" src="https://images-pw.pixieset.com/elementfield/494711761/Cakewalk_0621_193150_7815-90aff54a.jpg">
+       <div class="col py-3 ">
+         <div  >
+           <img class="w-75 rounded animated bounceInLeft" style="animation-delay: 1s;" src="https://tse1.mm.bing.net/th?id=OIP.aYG_AVZepxQK13PAjTUbegHaEV&pid=Api&P=0&h=180">
        </div>
        </div>
      </div>
    </div><br>
     <div class="row" id="Project">
-        <h1 class="text-center mb-3 text-decoration-underline" style="color: #15bdb4;" >Project</h1>
+        <h1 class="text-center mb-3" style="color: #15bdb4;" >Projects</h1>
         <div class="container">
             <div class="row">
-                <div class="col card1">
-                  <div class="card mb-3 text-center shadow-lg " data-aos="fade-right">
-                      <img class="w-100 card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qfIAuqnRt5O98emK3KkKSjkXeWuVBLU2ew&usqp=CAU" >
+                <div class="col card1 h-50 float-center">
+                  <div class="card mb-3 text-center shadow-lg animated bounceInLeft" >
+                      <div  style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qfIAuqnRt5O98emK3KkKSjkXeWuVBLU2ew&usqp=CAU); height: 200px; background-repeat: no-repeat;background-size: cover;background-position: center; " ></div>
                       <div class="card-body">
-                         <h4>Website for Profesional Work</h4>
-                         <h6>A Simple and Profesional websites for web developer </h6><br>
+                         <h3>Website for Profesional Work</h3>
+                         <h6>A Simple and Profesional websites for web developer </h6>
                       </div> 
                       <div class="card-footer ">
                           <button class="text-white btn btn-primary float-start">Demo</button>
@@ -154,108 +160,112 @@
                       </div>
                   </div>
               </div>
-              <div class="col card2">
-                <div class="card mb-3 text-center shadow-lg " data-aos="fade-up">
-                    <img class="w-100 card-img-top" src="download.png">
+              <div class="col card1 h-50">
+                <div class="card mb-3 text-center shadow-lg animated bounceInRight" style="animation-delay: 1s; " >
+                  <div  style="background-image: url(download.png); height: 200px;  background-repeat: no-repeat;background-size: cover;background-position: center; " ></div>
                     <div class="card-body">
-                        <h4><strong>Billing System Management</strong></h4>
-                        <h6>Online Billing System is a software application individuals to manage their billing processes online.</h6>
-                    </div>
+                        <h5><strong>Billing System Management</strong></h5>
+                        <h6>Online Billing System is a  software  application  individuals to  manage  their  billing  processes  online.</h6>
+                    <br>
+                      </div>
                     <div class="card-footer ">
-                        <button class="text-white btn btn-info float-start">Demo</button>
-                        <button class="text-white btn btn-info float-end">Gitup</button>
+                        <button class="text-white btn btn-primary float-start">Demo</button>
+                        <button class="text-white btn btn-primary float-end">Gitup</button>
                     </div>
                 </div>
             </div>
-              <div class="col card3">
+              <div class="col card1 h-50 animated bounceInLeft">
                 <div  class="card mb-3 text-center shadow-lg" data-aos="fade-left">
-                    <img class="w-100 card-img-top" src="https://i.ytimg.com/vi/r2URhVbHJ90/hqdefault.jpg">
+                    <img class="w-100 card-img-top" src="hqdefault.jpg">
                     <div class="card-body">
-                        <h4>GAME PROJECT</h4>
-                        <h6>A game that is designed to give pleasure to the player while the player is actively involved in game activities</h6>
+                        <h3>GAME PROJECT</h3>
+                        <h6 style="font-size: 18px;">A game that is designed to give pleasure to the player while the player is actively involved in game activities.</h6>
                     </div>
                     <div class="card-footer ">
-                        <button class="text-white btn btn-warning float-start">Demo</button>
-                        <button class="text-white btn btn-warning float-end">Gitup</button>
+                        <button class="text-white btn btn-primary float-start">Demo</button>
+                        <button class="text-white btn btn-primary float-end">Gitup</button>
                     </div>
                 </div>
             </div>
-            <div class="col card4">
-              <div class="card mb-3 text-center shadow-lg" data-aos="fade-down">
+            <div class="col card1 h-50">
+              <div class="card mb-3 text-center shadow-lg animated bounceInRight">
                   <img class="w-100 card-img-top" src="https://img.freepik.com/free-vector/female-student-studying-with-laptop_74855-2396.jpg?w=2000">
                   <div class="card-body">
                       <h5><strong> Library Management System</strong></h5>
-                      <h6>A college library management is a project that manages and stores books information electronically according to students needs.</h6>
+                      <h6>A college library management that manages and stores books information according to students needs.</h6>
                     </div>
                   <div class="card-footer ">
-                      <button class="text-white btn btn-danger float-start">Demo</button>
-                      <button class="text-white btn btn-danger float-end">Gitup</button>
+                      <button class="text-white btn btn-primary float-start">Demo</button>
+                      <button class="text-white btn btn-primary float-end">Gitup</button>
                   </div>
               </div>
           </div>
-        </div>
-    </div><br><br><br><br>
+        </div><br><br><br><br>
+    </div>
     <div id="EDUCATION AND CETIFICATE" class="container" >
         <div class="row rounded py-5" style="background-color: rgb(0, 0, 51);">
             <div class="col mx-5" data-aos="flip-left">
-            <img class="w-75 rounded mx-5" src="https://img.freepik.com/free-photo/education-day-arrangement-with-graduation-cap_23-2148721281.jpg?size=626&ext=jpg&ga=GA1.1.298659369.1681316794&semt=ais" >   
+            <img class="w-75 rounded mx-5 animated bounceInLeft Educationimg" style="animation-delay: 1s;" src="https://tse4.mm.bing.net/th?id=OIP.jjGPFFqzJkPZnq51Sc5-DgHaFE&pid=Api&P=0&h=180" >   
             </div>
             <div class="col  text-center text-white">
-                <h1 style="text-decoration: underline;" class="py-3" >EDUCATION</h1>
-                <h3 > Basic Qualification and Certifications</h3>
+                <h1  class="py-3 " style="color:#55ACEE" >EDUCATION</h1>
+                <h3 style="color:gray"> Basic Qualification and Certifications</h3>
                 <h6 class="" >I regularly update my self from the new technologies. Below are some of my major certifications.</h6>
             </div>
         </div>
-    </div><br><br>
-      <h1 class="text-center" style="color:#bb0000;text-decoration: underline;">Degree Received</h1><br>
-      <div class="container">
+    </div>
+      
+      <div class="container-fluid">
+        <br><br>
+        <h1 class="text-center" style="color:#15bdb4;">Degree Received</h1><br>
         <div class="row">
-          <div class="col card mb-3" data-aos="zoom-in-up" >
-              <div  class="text-bg-danger">
+          <div class="col card mb-3 mx-5  DivDegree" >
+              <div class="bg-danger" >
                   <div class="card-title d-flex justify-content-around align-items-center">
-                  <h4> Sukkur IBA University</h4><br>
-                  <p><strong>28 july 2023-28 july 2025 </strong></p>
+                  <h4 class="text-white"> Sukkur IBA University</h4><br>
+                  <p class="text-white"><strong>28 july 2023-28 july 2025 </strong></p>
                   </div> 
-                  <p class="px-5"><strong>Bachelor in Computer Science</strong></p>
-              </div> 
+                  <p class="px-5 text-white"><strong>Bachelor in Computer Science</strong></p>
+              </div> <hr>
               <div class="card-body text-danger">
               <p>I have done my bachelors in Computer Science.</p>
               <p>I have studied core subjects like Data Structures, DBMS, etc..</p>
               <p>I have also completed various courses for frontend , Web development etc.</p>
               <p>I have implemented several projects based on what I've leart under my Computer Science course.</p>
-              <button class="btn btn-danger px-5 py-2 float-end" type="submit">Visit websites</button>
+              <a class="btn btn-danger px-5 py-2 float-end DivDegree" href="https://www.iba-suk.edu.pk/" >Visit websites</a>
               </div>
           </div>
-          <div class="col text-center my-5 ">
-            <img class="w-25 rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/SIBA_Logo.jpg/220px-SIBA_Logo.jpg">
+          <div class="col  my-5 ">
+            <img class="w-25 rounded-circle ibalogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/SIBA_Logo.jpg/220px-SIBA_Logo.jpg">
           </div>
         </div>
       </div>
             <br>
-
-            <h1 class="text-center" style="color: orangered;text-decoration: under;">Certificate</h1>
-            <div class="container">
-                <div class="row">
-                  <div class="col">
-                      <div class="card mb-3 " data-aos="fade-right">
+            <h1 class="text-center" style="color:#15bdb4;">Certificate</h1>
+            <div class="container ">
+                <div class="row px-5">
+                  <div class="col animated bounceInLeft  px-5 " style="animation-delay: 1s;">
+                      <div class="card mb-3 w-75 Certificatecard" >
                           <img class="card-img-top w-100 " src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/7c/410745fcfe437daa59b7e43c5b8dfb/RDBMS.jpg?auto=format%2Ccompress&dpr=1">
                           <div class="card-body text-center">
-                             <h2>Relational database</h2>
+                             <h3>Relational database</h3>
                              <h6>Meta</h6>
                           </div>
                       </div>
                   </div>
-                  <div class="col">
-                    <div  class="card mb-3 " data-aos="flip-left">
-                      <img class="card-img-top w-100 " src="https://th.bing.com/th?id=OIP.QQUTcBAmVvxoiZ0CRJy5rwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+                  <div class="col animated bounceInRight " style="animation-delay: 1s;">
+                    <div  class="card mb-3 w-75 Certificatecard">
+                      <div >
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.WPuup-WQt0dPjlkVUv6LGgHaHa&pid=Api&P=0&h=180" class="w-100" >
+                      </div>
                       <div class="card-body text-center">
                          <h4>HTML</h4>
                          <h6>Meta</h6>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card mb-3 " data-aos="fade-down">
+                  <div class="col  animated bounceInLeft " style="animation-delay: 1s;">
+                    <div class="card mb-3 w-75 Certificatecard">
                       <img class="card-img-top w-100" src="https://th.bing.com/th?id=OIP.yUIb5S_kj98Eg5tT-Onx1AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
                       <div class="card-body text-center">
                          <h4>CSS</h4>
@@ -264,9 +274,9 @@
                   </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="card mb-3 text-center" data-aos="fade-up">
+                <div class="row my-4 px-5 ">
+                  <div class="col animated bounceInLeft  px-5 pe-0 w-75" style="animation-delay: 1s;">
+                    <div class="card mb-3 text-center w-75 Certificatecard" >
                       <img class="card-img-top w-100" src="https://th.bing.com/th?id=OIP.0BLjxxiPCa4DSQzJtKMVSwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
                       <div class="card-body">
                          <h4>Bootstrap</h4>
@@ -274,8 +284,8 @@
                       </div>
                   </div>
                   </div>
-                  <div class="col">
-                    <div  class="card mb-3 text-center" data-aos="fade-up">
+                  <div class="col  animated bounceInRight" style="animation-delay: 1s;">
+                    <div  class="card mb-3 text-center w-75 Certificatecard" >
                       <div style="background-color: goldenrod;">
                        <img class="card-img-top w-75" src="data:image/png;base64,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" style=" margin-top:50px" >
                       </div> 
@@ -285,8 +295,8 @@
                        </div>
                    </div>
                   </div>
-                  <div class="col">
-                    <div class="card mb-3 text-center" data-aos="fade-left">
+                  <div class="col ">
+                    <div class="card mb-3 text-center w-75 animated bounceInLeft Certificatecard" style="animation-delay: 1s;" >
                       <img class="card-img-top w-100" src="https://shahportfolio.netlify.app/static/media/mysql.9f37f28f.png">
                       <div class="card-body">
                          <h4>MySQL</h4>
@@ -296,38 +306,50 @@
                   </div>
                 </div>
               </div>
-              <div class="container-fluid">
-                <div class="row py-5" style="background-color:#000066;">
+              <div class="container ">
+                <div class="row py-5 " style="background-color:#000066;">
                   <div class="col">
-                      <div id="SKILL">
-                          <h1 class="text-center text-white" data-aos="fade-up" ><span style="color: #00e600;">MY</span> SKILL</h1>
-                          <h6 class="text-center text-white" data-aos="fade-right">HTML</h6>
-                          <div class="progress " data-aos="fade-right">
+                      <div id="SKILLS">
+                         <h1 class="text-center animated bounceInLeft" style="animation-delay: 1ms;color:  #00e600;"> Skill</h1>
+                         <h6 class="text-center text-white animated bounceInLeft" style="animation-delay: 1ms;"  >java</h6>
+                          <div class="progress animated bounceInLeft" style="animation-delay: 1ms;" >
+                              <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%;">95%</div>
+                          </div><br> 
+                          <h6 class="text-center text-white animated bounceInLeft" style="animation-delay: 1ms;"  >C++</h6>
+                          <div class="progress animated bounceInLeft" style="animation-delay: 1ms;"  >
                               <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%;">90%</div>
                           </div><br>
-                          <h6 class="text-center text-white" data-aos="fade-left">CSS</h6>
-                          <div class="progress" data-aos="fade-left">
-                              <div class="progress-bar progress-bar-striped bg-success " role="progressbar" style="width: 85%" >85%</div>
+                          <h6 class="text-center text-white animated bounceInLeft" style="animation-delay: 1ms;"  >Data Base</h6>
+                          <div class="progress animated bounceInLeft" style="animation-delay: 1ms;" >
+                              <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%;">90%</div>
                           </div><br>
-                          <h6 class="text-center text-white" data-aos="fade-down">BOOTSTRAP</h6>
-                          <div class="progress" data-aos="fade-down">
-                              <div class="progress-bar progress-bar-striped bg-info " role="progressbar" style="width: 78%" >78%</div>
+                         <h6 class="text-center text-white animated bounceInLeft" style="animation-delay: 1ms;"  >HTML</h6>
+                          <div class="progress animated bounceInLeft" style="animation-delay: 1ms;" >
+                              <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%;">90%</div>
                           </div><br>
-                          <h6 class="text-center text-white" data-aos="fade-up">JAVA SCRIPT</h6>
-                          <div class="progress" data-aos="fade-up">
-                              <div class="progress-bar progress-bar-striped bg-warning " role="progressbar" style="width: 40%" aria-valuenow="75%" aria-valuemax="50">40%</div>
+                          <h6 class="text-center text-white animated bounceInLeft" style="animation-delay: 1ms;"  >CSS</h6>
+                          <div class="progress animated bounceInLeft" style="animation-delay: 1ms;" >
+                              <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 85%" >85%</div>
+                          </div><br>
+                          <h6 class="text-center text-white animated bounceInLeft" style="animation-delay: 1ms;"  >BOOTSTRAP</h6>
+                          <div class="progress animated bounceInLeft" style="animation-delay: 1ms;" >
+                              <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 78%" >78%</div>
+                          </div><br>
+                          <h6 class="text-center text-white animated bounceInLeft" style="animation-delay: 1ms;"  >JAVA SCRIPT</h6>
+                          <div class="progress animated bounceInLeft" style="animation-delay: 1ms;" >
+                              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80%" aria-valuemax="50">80%</div>
                           </div>
                     </div>
                   </div>
-                  <div class="col text-center">
-                      <img  class="w-50 rounded" src="download.jpeg">
+                  <div class="col text-center ">
+                      <img  class="w-75 rounded skillimg animated bounceInRight" style="animation-delay: 1s;" src="download.jpeg">
                   </div>
               </div>
           </div>
         <form >
           <div class="container">
             <div class="row">
-              <h1 class="text-center text-decoration-underline" id="Contact" style="color:#55ACEE;">Contant Us</h1>
+              <h1 class="text-center" id="Contact" style="color:#55ACEE;">Contact Me</h1>
               <div class="col">
                 <input type="text" placeholder="Enter the first name"   class="form-control " data-aos="fade-right" required>&nbsp;&nbsp;&nbsp;
               </div>
@@ -349,13 +371,61 @@
                 </div>
             </div>
             <div class="row py-3"  >
-              <div class="col text-center">
-                <button class="btn btn-primary px-5 py-2" type="submit">Submit</button>
+              <div class="col text-center " >
+               <a href="mailto:sugandhchhabria@gmail.com" style="text-decoration:none ; background-color: #55ACEE; border: 1px solid #15bdb4; color: white; border-radius: 20px;" class="ps-5 pe-5 pt-2 pb-2 contactbutton ">Submit</a> 
               </div> 
             </div>
           </div>
-        </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        </form><br>
+        <div class="container-fluid" style="background-color:#000066;">
+          <div class="row">
+            <div class="col-sm">
+              <h2 class="px-5 text-info">Important Link </h2>
+                <nav >
+                  <ul style="list-style-type: none;" class="px-5 " >
+                    <li class="py-2" ><a href="#Home" class="text-decoration-none text-white py-2 px-3" >Home</a></li>
+                    <li class="py-2"><a href="#About" class="text-decoration-none text-white py-2 px-3">About Us</a></li>
+                    <li class="py-2"><a href="#Education and Certificate" class="text-decoration-none text-white py-2 px-3">Education and Certificate</a></li>
+                    <li class="py-2"><a href="#Contact" class="text-decoration-none text-white py-2 px-3">Contact US</a></li>
+                    <li class="py-2"><a href="#Project" class="text-decoration-none text-white py-2 px-3">Project</a></li>
+                    <li class="py-2"><a href="#SKILL" class="text-decoration-none text-white py-2 px-3">Skill</a></li>          
+                  </ul>
+                </nav>
+            </div>
+            <div class="col-sm">
+              <h2 class="text-info px-5 " >Follow Me</h2>
+              <li class="px-5 text-decoration-none " style="list-style-type: none;" >
+              <a href="#"><i class="fa-brands fa-facebook" style="background: #3B5998; color: white;padding: 10px;border-radius: 30px;"></i></a> 
+              <a href="#"><i class="fa-brands fa-twitter" style="background: #55ACEE; color: white;padding: 10px;border-radius: 30px;"></i></a> 
+              <a href="#"><i href class="fa-brands fa-youtube" style="background:#bb0000; color: white;padding: 10px;border-radius: 30px;"></i></a> 
+              <a href="#"><i class="fa-brands fa-instagram" style="background:#e6005c; color: white;padding: 12px;border-radius: 25px;"></i></a> 
+            </li>
+            </div>
+            <div class="col-sm px-5">
+              <h2 class="text-info px-5">Social Links</h2>
+              <li style="list-style-type: none;" class="px-5">
+                <a href="www.linkedin.com/in/sugandh-kumari-9b535324b/" class="text-decoration-none text-white "><i class="fa-brands fa-linkedin text-primary"></i> Linkdin</a><br>
+                <a href="#" class="text-decoration-none text-white "><i class="fa-brands fa-github bg-white rounded-circle" style="color: gray;"></i> Github</a><br>
+                <a href="#" class="text-decoration-none text-white "><i class="fa-sharp fa-solid fa-phone-volume text-warning "></i> No: 03084543765</a><br>
+                <a href="#" class="text-decoration-none text-white "><i class="fa-solid fa-envelope text-warning "></i> Email: sugandhchhabria@gmail.com</a>
+              </li>
+            </div>
+            <div class="row">
+              <hr>
+              <div class="col d-flex align-items-center justify-content-around  text-white" style="background-color:#000066;">
+                  <p>Copyright &copy; sugandh kumari</p>
+                  <a><i class="fa-solid fa-phone-flip text-warning" ></i> 03022236489</a>
+                  <a><i class="fa-solid fa-envelope text-warning" ></i> Email: sugandhchhabria@gmail.com</a>
+                  <a><i class="fa-solid fa-map-pin text-warning"></i> Ghotki,Pakistan</a></p>
+              </div>
+          </div>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script>
         AOS.init();
       </script>
